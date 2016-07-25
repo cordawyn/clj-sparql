@@ -14,7 +14,7 @@
 
 (ns clj-sparql.core
    (:import
-            (com.hp.hpl.jena.query Query
+            (org.apache.jena.query Query
                                    QueryExecution
                                    QueryExecutionFactory
                                    ARQ
@@ -29,12 +29,12 @@
             (org.apache.http.client CredentialsProvider)
             (org.apache.http.client.protocol ClientContext)
             (org.apache.http.impl.client BasicCredentialsProvider )
-            (com.hp.hpl.jena.sparql.modify UpdateProcessRemote UpdateProcessRemoteForm)
-            (com.hp.hpl.jena.update  UpdateExecutionFactory
+            (org.apache.jena.sparql.modify UpdateProcessRemote UpdateProcessRemoteForm)
+            (org.apache.jena.update  UpdateExecutionFactory
                                      UpdateFactory
                                      UpdateProcessor
                                      UpdateRequest)
-            (com.hp.hpl.jena.sparql.engine.http QueryEngineHTTP)))
+            (org.apache.jena.sparql.engine.http QueryEngineHTTP)))
 
 
 (defn convert-rdf-type
